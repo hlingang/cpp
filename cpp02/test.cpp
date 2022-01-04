@@ -5,6 +5,7 @@
 
 /*
 shared_ptr 管理动态内存
+1. 管理容器
 */
 using namespace std;
 struct T_TEST_INFO
