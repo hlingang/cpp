@@ -22,7 +22,7 @@ struct T_TEST_INFO
     }
     ~T_TEST_INFO()
     {
-        printf("delete T_TEST_INFO-%d\n", index);
+        // printf("delete T_TEST_INFO-%d\n", index);
     }
 };
 
@@ -37,6 +37,7 @@ int main()
         testInfo.value = i * i;
         testInfo.index = i;
         sptr->push_back(testInfo);
+        printf("index:%d vecAddr = %p  vecdataAddr = %p\n", i, sptr.get(), &sptr->at(0));
     }
     return 0;
 }
